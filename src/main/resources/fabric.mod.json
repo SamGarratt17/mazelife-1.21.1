@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "mazelife",
+	"version": "${version}",
+	"name": "MazeLife",
+	"description": "Custom mod required for MazeLife",
+	"authors": [
+		"CubCraft Production Studios Cooperative Incorperation"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/mazelife/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.cub.mazelife.MazeLife"
+		],
+		"client": [
+			"net.cub.mazelife.MazeLifeClient"
+		],
+		"fabric-datagen": [
+			"net.cub.mazelife.MazeLifeDataGenerator"
+		]
+	},
+	"mixins": [
+		"mazelife.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
