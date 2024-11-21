@@ -1,0 +1,30 @@
+{
+  "type": "mazelife:kaupendim_type",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:plains",
+      "lakes": false,
+      "features": false,
+      "layers": [
+        {
+          "block": "minecraft:wheat",
+          "height": 1
+        },
+        {
+          "block": "minecraft:farmland",
+          "height": 1
+        },
+        {
+          "block": "minecraft:dirt",
+          "height": 61
+        },
+        {
+          "block": "minecraft:bedrock",
+          "height": 1
+        }
+      ],
+      "structure_overrides": "minecraft:mineshafts"
+    }
+  }
+}
